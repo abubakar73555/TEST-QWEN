@@ -1,0 +1,14 @@
+{
+  "name": "seo-worker-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "init-kv": "wrangler kv:namespace create \"SEO_CONTENT\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
