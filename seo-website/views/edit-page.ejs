@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= page ? 'تعديل الصفحة' : 'إضافة صفحة جديدة' %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header">
+        <div class="container">
+            <h1>🎯 لوحة تحكم SEO</h1>
+            <nav class="admin-nav">
+                <a href="/admin/dashboard" class="btn btn-secondary">← العودة للوحة التحكم</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <div class="form-container">
+                <h2><%= page ? 'تعديل الصفحة' : 'إضافة صفحة جديدة' %></h2>
+                
+                <form action="<%= action %>" method="POST" class="seo-form">
+                    <div class="form-section">
+                        <h3>المعلومات الأساسية</h3>
+                        
+                        <div class="form-group">
+                            <label for="title">عنوان الصفحة (Title): *</label>
+                            <input type="text" id="title" name="title" value="<%= page ? page.title : '' %>" required 
+                                   placeholder="أدخل عنواناً جذاباً يحتوي على الكلمات المفتاحية الرئيسية">
+                            <small>ينصح بأن يكون بين 50-60 حرفاً لتحسين الظهور في جوجل</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="slug">الرابط (Slug): *</label>
+                            <input type="text" id="slug" name="slug" value="<%= page ? page.slug : '' %>" required 
+                                   placeholder="مثال: seo-guide-2025" pattern="[a-z0-9-]+">
+                            <small>استخدم أحرف إنجليزية صغيرة وشرطات فقط، وتجنب المسافات</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="content">محتوى الصفحة (HTML): *</label>
+                            <textarea id="content" name="content" rows="15" required 
+                                      placeholder="<h1>العنوان الرئيسي</h1><p>ابدأ بكتابة المحتوى...</p>"><%= page ? page.content : '' %></textarea>
+                            <small>يمكنك استخدام وسوم HTML مثل h1, h2, p, ul, li, strong, em</small>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>تحسين محركات البحث (SEO)</h3>
+                        
+                        <div class="form-group">
+                            <label for="metaDescription">وصف الميتا (Meta Description):</label>
+                            <textarea id="metaDescription" name="metaDescription" rows="3" 
+                                      placeholder="اكتب وصفاً جذاباً لصفحتك يظهر في نتائج البحث"><%= page ? page.meta_description : '' %></textarea>
+                            <small>ينصح بأن يكون بين 150-160 حرفاً. هذا الوصف سيظهر تحت عنوان صفحتك في نتائج جوجل</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="keywords">الكلمات المفتاحية (Keywords):</label>
+                            <input type="text" id="keywords" name="keywords" value="<%= page ? page.keywords : '' %>" 
+                                   placeholder="كلمة1, كلمة2, كلمة3">
+                            <small>افصل بين الكلمات بفاصلة. ركز على 3-5 كلمات مفتاحية رئيسية</small>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>مشاركة وسائل التواصل الاجتماعي (Open Graph)</h3>
+                        
+                        <div class="form-group">
+                            <label for="ogTitle">عنوان Open Graph:</label>
+                            <input type="text" id="ogTitle" name="ogTitle" value="<%= page ? page.og_title : '' %>" 
+                                   placeholder="عنوان عند المشاركة على فيسبوك وتويتر">
+                            <small>اختياري. إذا تركته فارغاً سيتم استخدام العنوان الرئيسي</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ogDescription">وصف Open Graph:</label>
+                            <textarea id="ogDescription" name="ogDescription" rows="2" 
+                                      placeholder="وصف عند المشاركة على وسائل التواصل"><%= page ? page.og_description : '' %></textarea>
+                            <small>اختياري. إذا تركته فارغاً سيتم استخدام وصف الميتا</small>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <%= page ? 'حفظ التعديلات' : 'إنشاء الصفحة' %>
+                        </button>
+                        <a href="/admin/dashboard" class="btn btn-secondary">إلغاء</a>
+                    </div>
+                </form>
+
+                <div class="seo-tips-box">
+                    <h4>💡 نصائح SEO سريعة:</h4>
+                    <ul>
+                        <li>استخدم الكلمة المفتاحية الرئيسية في العنوان وأول فقرة</li>
+                        <li>قسّم المحتوى باستخدام عناوين فرعية (H2, H3)</li>
+                        <li>اجعل المحتوى طويلاً وشاملاً (1000+ كلمة)</li>
+                        <li>أضف روابط داخلية لصفحات أخرى ذات صلة</li>
+                        <li>استخدم الصور مع نصوص بديلة (Alt Text)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
