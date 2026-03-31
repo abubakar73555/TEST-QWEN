@@ -1,0 +1,16 @@
+name = "seo-worker-project"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# إعدادات قاعدة البيانات (KV)
+# يجب إنشاء KV Namespace أولاً ثم إضافة المعرف هنا
+# wrangler kv:namespace create "SEO_CONTENT"
+[[kv_namespaces]]
+binding = "SEO_CONTENT"
+id = "YOUR_KV_NAMESPACE_ID"  # استبدل هذا بالمعرف الحقيقي بعد الإنشاء
+
+# متغيرات البيئة
+[vars]
+ADMIN_PASSWORD = "admin123"  # قم بتغيير هذه الكلمة قبل النشر!
+SITE_TITLE = "دليل SEO المتكامل"
+SITE_DESCRIPTION = "موقع متخصص في تحسين محركات البحث ومقالات سيو حصرية"
