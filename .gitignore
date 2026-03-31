@@ -1,0 +1,83 @@
+```
+# Dependencies
+node_modules/
+
+# Database
+seo-website/db/seo.db
+
+# Logs
+server.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Build artifacts
+build/
+dist/
+target/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
+*.sublime-workspace
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compressed
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# Coverage
+coverage/
+htmlcov/
+.coverage*
+
+# Testing
+.nyc_output/
+istanbul.out
+```
