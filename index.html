@@ -3,164 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO Meta Tags -->
-    <title>سلامة | الرائد في عقود الصيانة والتقارير الفنية المعتمدة</title>
-    <meta name="description" content="شركة سلامة تقدم أفضل حلول عقود الصيانة الدورية، التقارير الفنية الهندسية، وصيانة الأنظمة الميكانيكية والكهربائية. دقة، التزام، واحترافية.">
-    <meta name="keywords" content="عقود صيانة, تقارير فنية, شركة صيانة, صيانة دورية, سلامة للصيانة, فحص مباني, صيانة تكييف, صيانة كهرباء">
-    <meta name="author" content="شركة سلامة">
+    <title>سلامة - الرائد في عقود الصيانة والتقارير الفنية | صيانة وقائية وحلول شاملة</title>
+    <meta name="description" content="شركة سلامة المتخصصة في عقود الصيانة الوقائية والتصحيحية، التقارير الفنية المعتمدة، وصيانة المباني والمنشآت. حلول شاملة للمنازل والشركات والمصانع بأفضل الأسعار في السعودية والإمارات.">
+    <meta name="keywords" content="عقود صيانة, صيانة وقائية, تقارير فنية, صيانة مباني, صيانة كهرباء, صيانة تكييف, صيانة مصاعد, شركة صيانة, عقد صيانة سنوي, فحص دوري, سلامة المنشآت">
+    <meta name="author" content="شركة سلامة للصيانة">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.salama.com/">
     
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="سلامة | خبراء الصيانة والتقييم الفني">
-    <meta property="og:description" content="حلول متكاملة لعقود الصيانة والتقارير الفنية للمباني والمنشآت.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="سلامة - الرائد في عقود الصيانة والتقارير الفنية">
+    <meta property="og:description" content="حلول صيانة شاملة للمنازل والشركات والمصانع. عقود صيانة وقائية وتقارير فنية معتمدة.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.salama.com/">
+    <meta property="og:image" content="https://www.salama.com/images/logo.png">
+    <meta property="og:locale" content="ar_SA">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.salama-example.com/">
-
-    <!-- Schema.org Structured Data for Local Business -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="سلامة - عقود الصيانة والتقارير الفنية">
+    <meta name="twitter:description" content="حلول صيانة احترافية بشهادات معتمدة وضمان شامل.">
+    
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "شركة سلامة للصيانة",
-      "image": "https://www.salama-example.com/logo.png",
-      "description": "شركة متخصصة في عقود الصيانة والتقارير الفنية.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "شارع التخصصي",
-        "addressLocality": "الرياض",
-        "addressCountry": "SA"
-      },
-      "priceRange": "$$"
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "شركة سلامة للصيانة",
+        "image": "https://www.salama.com/images/logo.png",
+        "description": "شركة متخصصة في عقود الصيانة الوقائية والتصحيحية والتقارير الفنية المعتمدة",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "طريق الملك فهد",
+            "addressLocality": "الرياض",
+            "addressRegion": "الرياض",
+            "postalCode": "11564",
+            "addressCountry": "SA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "24.7136",
+            "longitude": "46.6753"
+        },
+        "url": "https://www.salama.com/",
+        "telephone": "+966112345678",
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/salama",
+            "https://www.twitter.com/salama",
+            "https://www.linkedin.com/company/salama"
+        ]
     }
     </script>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Header -->
     <header class="main-header">
         <div class="container">
-            <div class="logo">
-                <h1>سلامة</h1>
-            </div>
-            <nav>
-                <ul>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>🛡️ سلامة</h1>
+                </div>
+                <ul class="nav-menu">
                     <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
                     <li><a href="contracts.html">عقود الصيانة</a></li>
                     <li><a href="reports.html">التقارير الفنية</a></li>
-                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="projects.html">مشاريعنا</a></li>
+                    <li><a href="blog.html">المركز الإعلامي</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
                 </ul>
+                <div class="nav-cta">
+                    <a href="quote.html" class="btn-primary">اطلب عرض سعر</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
-            <div class="cta-btn">
-                <a href="#contact">اطلب عرض سعر</a>
-            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>ضمان استمرارية أعمالك مع عقود صيانة احترافية</h2>
-            <p>نقدم في "سلامة" حلول صيانة شاملة وتقارير فنية دقيقة تضمن لك أعلى معايير الجودة والسلامة.</p>
-            <div class="hero-buttons">
-                <a href="contracts.html" class="btn btn-primary">تصفح عقود الصيانة</a>
-                <a href="reports.html" class="btn btn-secondary">نموذج تقرير فني</a>
+            <div class="hero-content">
+                <h1 class="hero-title">شركة سلامة - رائدة عقود الصيانة والتقارير الفنية في المملكة</h1>
+                <p class="hero-subtitle">نقدم حلول صيانة وقائية وتصحيحية شاملة للمنازل والشركات والمصانع والمنشآت الحكومية بأعلى معايير الجودة والاحترافية</p>
+                <div class="hero-buttons">
+                    <a href="contracts.html" class="btn-primary btn-large">تصفح عقود الصيانة</a>
+                    <a href="reports.html" class="btn-secondary btn-large">طلب تقرير فني</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+5000</span>
+                        <span class="stat-label">عقد صيانة نشط</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">+15000</span>
+                        <span class="stat-label">تقرير فني معتمد</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">+20</span>
+                        <span class="stat-label">سنة خبرة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">%98</span>
+                        <span class="stat-label">نسبة رضا العملاء</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Overview (SEO Rich Content) -->
-    <section class="services">
+    <!-- Services Overview -->
+    <section class="services-overview section-padding">
         <div class="container">
-            <div class="section-title">
-                <h3>لماذا تختار سلامة؟</h3>
-                <p>نحن نجمع بين الخبرة التقنية والالتزام الزمني لنقدم قيمة مضافة لمنشأتك.</p>
+            <div class="section-header">
+                <h2 class="section-title">خدماتنا المتكاملة في مجال الصيانة والتقييم الفني</h2>
+                <p class="section-subtitle">نقدم مجموعة شاملة من خدمات الصيانة الوقائية والتصحيحية والتقارير الفنية المعتمدة لجميع أنواع المنشآت</p>
             </div>
-            <div class="cards-grid">
-                <article class="card">
-                    <h4>عقود الصيانة الوقائية</h4>
-                    <p>برامج صيانة دورية تمنع الأعطال قبل حدوثها، مما يطيل عمر الأصول ويقلل التكاليف التشغيلية.</p>
-                </article>
-                <article class="card">
-                    <h4>التقارير الفنية المعتمدة</h4>
-                    <p>إصدار تقارير فنية هندسية مفصلة لحالة المباني والأنظمة، معتمدة من جهات رقابية.</p>
-                </article>
-                <article class="card">
-                    <h4>صيانة الطوارئ 24/7</h4>
-                    <p>فريق جاهز على مدار الساعة للتعامل مع الأعطال المفاجئة لضمان عدم توقف أعمالك.</p>
-                </article>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>عقود صيانة المباني</h3>
+                    <p>عقود صيانة شاملة للمباني السكنية والتجارية والإدارية تشمل جميع الأنظمة الكهربائية والميكانيكية والإنشائية</p>
+                    <a href="building-maintenance.html" class="service-link">التفاصيل →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>صيانة الأنظمة الكهربائية</h3>
+                    <p>فحص وصيانة اللوحات الكهربائية والكابلات وأنظمة الإضاءة والطوارئ وفق أعلى معايير السلامة</p>
+                    <a href="electrical-maintenance.html" class="service-link">التفاصيل →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>صيانة أنظمة التكييف والتبريد</h3>
+                    <p>صيانة دورية لأنظمة التكييف المركزية والمنفصلة والتبريد الصناعي لضمان الكفاءة العالية</p>
+                    <a href="hvac-maintenance.html" class="service-link">التفاصيل →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>الصيانة الميكانيكية</h3>
+                    <p>صيانة المعدات والآلات والمضخات والمحركات وأنظمة الهيدروليك والهواء المضغوط</p>
+                    <a href="mechanical-maintenance.html" class="service-link">التفاصيل →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>التقارير الفنية المعتمدة</h3>
+                    <p>إصدار تقارير فنية معتمدة لتقييم حالة المنشآت والمعدات وأنظمة السلامة والجودة</p>
+                    <a href="technical-reports.html" class="service-link">التفاصيل →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>فحص المنشآت الإنشائية</h3>
+                    <p>تقييم شامل للحالة الإنشائية للمباني والجسور والمنشآت الخرسانية والمعدنية</p>
+                    <a href="structural-inspection.html" class="service-link">التفاصيل →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚒</div>
+                    <h3>أنظمة السلامة والحماية</h3>
+                    <p>صيانة أنظمة مكافحة الحرائق والإنذار和安全出口 وأنظمة الطوارئ</p>
+                    <a href="safety-systems.html" class="service-link">التفاصيل →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏭</div>
+                    <h3>صيانة المصانع والمنشآت الصناعية</h3>
+                    <p>حلول صيانة متكاملة للمصانع وخطوط الإنتاج والمعدات الصناعية الثقيلة</p>
+                    <a href="industrial-maintenance.html" class="service-link">التفاصيل →</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <!-- Why Choose Us -->
+    <section class="why-choose section-padding bg-light">
         <div class="container">
-            <div class="stat-item">
-                <span class="number">+500</span>
-                <span class="label">عقد صيانة نشط</span>
+            <div class="section-header">
+                <h2 class="section-title">لماذا تختار شركة سلامة لعقود الصيانة؟</h2>
+                <p class="section-subtitle">نتميز بمجموعة من المزايا التنافسية التي تجعلنا الخيار الأول للشركات والمؤسسات في المملكة</p>
             </div>
-            <div class="stat-item">
-                <span class="number">+1200</span>
-                <span class="label">تقرير فني معتمد</span>
-            </div>
-            <div class="stat-item">
-                <span class="number">99%</span>
-                <span class="label">رضا العملاء</span>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>شهادات اعتماد دولية</h3>
+                    <p>معتمدون من الهيئة السعودية للمواصفات والمقاييس والجودة وشهادات ISO 9001</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>فريق فني متخصص</h3>
+                    <p>أكثر من 200 فني ومهندس معتمد في مختلف تخصصات الصيانة</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>استجابة سريعة 24/7</h3>
+                    <p>خدمة طوارئ على مدار الساعة طوال أيام الأسبوع لجميع عملائنا</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>قطع غيار أصلية</h3>
+                    <p>نستخدم فقط قطع الغيار الأصلية المعتمدة من الشركات المصنعة</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>أسعار تنافسية</h3>
+                    <p>عقود صيانة بأسعار منافسة مع ضمان أفضل قيمة مقابل السعر</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>تقارير مفصلة</h3>
+                    <p>تقارير فنية مفصلة بعد كل زيارة صيانة مع توصيات وقائية</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>ضمان شامل</h3>
+                    <p>ضمان على جميع أعمال الصيانة وقطع الغيار لفترات تصل إلى سنتين</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✓</div>
+                    <h3>تغطية جغرافية واسعة</h3>
+                    <p>فروع في الرياض وجدة والدمام والخبر وأبوظبي ودبي</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contracts Preview -->
+    <section class="contracts-preview section-padding">
         <div class="container">
-            <div class="section-title">
-                <h3>تواصل معنا الآن</h3>
-                <p>استشر خبرائنا للحصول على أفضل حل لصيانتك.</p>
+            <div class="section-header">
+                <h2 class="section-title">باقات عقود الصيانة المتاحة</h2>
+                <p class="section-subtitle">اختر الباقة المناسبة لاحتياجاتك من بين باقاتنا المرنة والشاملة</p>
             </div>
-            <form id="contactForm" class="contact-form">
-                <input type="text" placeholder="الاسم الكامل" required>
-                <input type="email" placeholder="البريد الإلكتروني" required>
-                <input type="tel" placeholder="رقم الجوال" required>
-                <select>
-                    <option value="">نوع الخدمة المطلوبة</option>
-                    <option value="contract">عقد صيانة</option>
-                    <option value="report">تقرير فني</option>
-                    <option value="emergency">صيانة طارئة</option>
-                </select>
-                <textarea placeholder="تفاصيل الطلب" rows="5"></textarea>
-                <button type="submit" class="btn btn-primary">إرسال الطلب</button>
-            </form>
+            <div class="contracts-grid">
+                <div class="contract-card">
+                    <div class="contract-badge">الأكثر طلباً</div>
+                    <h3>العقد الأساسي</h3>
+                    <div class="contract-price">
+                        <span class="price">2,500</span>
+                        <span class="period">ريال/سنوياً</span>
+                    </div>
+                    <ul class="contract-features">
+                        <li>✓ 4 زيارات صيانة سنوية</li>
+                        <li>✓ فحص الأنظمة الكهربائية</li>
+                        <li>✓ صيانة أنظمة التكييف</li>
+                        <li>✓ تقرير فني بعد كل زيارة</li>
+                        <li>✓ خدمة طوارئ خلال ساعات العمل</li>
+                        <li>✗ قطع الغيار غير مشمولة</li>
+                    </ul>
+                    <a href="basic-contract.html" class="btn-outline">تفاصيل العقد</a>
+                </div>
+                <div class="contract-card featured">
+                    <div class="contract-badge popular">الأفضل قيمة</div>
+                    <h3>عقد الأعمال</h3>
+                    <div class="contract-price">
+                        <span class="price">5,000</span>
+                        <span class="period">ريال/سنوياً</span>
+                    </div>
+                    <ul class="contract-features">
+                        <li>✓ 8 زيارات صيانة سنوية</li>
+                        <li>✓ صيانة شاملة للكهرباء والميكانيكا</li>
+                        <li>✓ صيانة أنظمة التكييف والتبريد</li>
+                        <li>✓ فحص أنظمة السلامة</li>
+                        <li>✓ تقارير فنية شهرية</li>
+                        <li>✓ خدمة طوارئ 24/7</li>
+                        <li>✓ خصم 20% على قطع الغيار</li>
+                    </ul>
+                    <a href="business-contract.html" class="btn-primary">تفاصيل العقد</a>
+                </div>
+                <div class="contract-card">
+                    <div class="contract-badge">للشركات الكبرى</div>
+                    <h3>العقد الشامل</h3>
+                    <div class="contract-price">
+                        <span class="price">10,000+</span>
+                        <span class="period">ريال/سنوياً</span>
+                    </div>
+                    <ul class="contract-features">
+                        <li>✓ 12 زيارة صيانة سنوية (شهرياً)</li>
+                        <li>✓ صيانة شاملة لجميع الأنظمة</li>
+                        <li>✓ مدير حساب مخصص</li>
+                        <li>✓ تقارير فنية أسبوعية</li>
+                        <li>✓ خدمة طوارئ 24/7 بأولوية</li>
+                        <li>✓ قطع غيار مشمولة حتى 5000 ريال</li>
+                        <li>✓ تدريب فريق العميل</li>
+                    </ul>
+                    <a href="enterprise-contract.html" class="btn-outline">تفاصيل العقد</a>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="all-contracts.html" class="btn-secondary">عرض جميع عقود الصيانة (25+ عقد)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="industries section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">القطاعات والمنشآت التي نخدمها</h2>
+                <p class="section-subtitle">نقدم حلول صيانة مخصصة لكل قطاع حسب متطلباته الخاصة</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <h4>🏠 القطاع السكني</h4>
+                    <p>فلل، عمائر، مجمعات سكنية</p>
+                </div>
+                <div class="industry-card">
+                    <h4>🏢 القطاع التجاري</h4>
+                    <p>مكاتب، محال، مراكز تجارية</p>
+                </div>
+                <div class="industry-card">
+                    <h4>🏥 القطاع الصحي</h4>
+                    <p>مستشفيات، عيادات، مختبرات</p>
+                </div>
+                <div class="industry-card">
+                    <h4>🎓 القطاع التعليمي</h4>
+                    <p>مدارس، جامعات، معاهد</p>
+                </div>
+                <div class="industry-card">
+                    <h4>🏭 القطاع الصناعي</h4>
+                    <p>مصانع، مستودعات، خطوط إنتاج</p>
+                </div>
+                <div class="industry-card">
+                    <h4>🏨 القطاع الفندقي</h4>
+                    <p>فنادق، منتجعات، شقق مفروشة</p>
+                </div>
+                <div class="industry-card">
+                    <h4>🕌 القطاع الحكومي</h4>
+                    <p>وزارات، دوائر حكومية، مرافق عامة</p>
+                </div>
+                <div class="industry-card">
+                    <h4>⛽ قطاع الطاقة</h4>
+                    <p>محطات وقود، محطات كهرباء</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">آراء عملائنا في عقود الصيانة</h2>
+                <p class="section-subtitle">ثقة أكثر من 5000 عميل في المملكة والإمارات</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"نتعامل مع سلامة منذ 5 سنوات لعقد صيانة مبنى شركتنا. الاحترافية والدقة في المواعيد وجودة الخدمة لا مثيل لها. أنصح بهم بشدة."</p>
+                    <div class="testimonial-author">
+                        <strong>محمد الأحمد</strong>
+                        <span>مدير عمليات - شركة التقنية الحديثة</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"التقارير الفنية الصادرة من سلامة ساعدتنا في الحصول على شهادة الأيزو. فريق محترف ومتعاون جداً."</p>
+                    <div class="testimonial-author">
+                        <strong>خالد العتيبي</strong>
+                        <span>مدير الجودة - مصنع الخليج للألمنيوم</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"خدمة الطوارئ على مدار الساعة أنقذتنا عدة مرات. استجابة سريعة وحلول فعالة للمشاكل الطارئة."</p>
+                    <div class="testimonial-author">
+                        <strong>فاطمة الزهراني</strong>
+                        <span>مديرة مستشفى النور</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>جاهز لحماية منشأتك بعقد صيانة متكامل؟</h2>
+                <p>احصل على استشارة مجانية وعرض سعر مخصص لاحتياجاتك خلال 24 ساعة</p>
+                <div class="cta-buttons">
+                    <a href="quote.html" class="btn-primary btn-large">اطلب عرض سعر مجاني</a>
+                    <a href="contact.html" class="btn-secondary btn-large">تواصل معنا الآن</a>
+                </div>
+                <p class="cta-note">📞 أو اتصل بنا مباشرة: 920012345</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>شركة سلامة</h4>
-                    <p>شريكك الاستراتيجي في إدارة المرافق والصيانة.</p>
+                    <h3>🛡️ سلامة</h3>
+                    <p>الرائدة في عقود الصيانة والتقارير الفنية في المملكة العربية السعودية والإمارات</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>روابط سريعة</h4>
                     <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="contracts.html">العقود</a></li>
-                        <li><a href="reports.html">التقارير</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="contracts.html">عقود الصيانة</a></li>
+                        <li><a href="reports.html">التقارير الفنية</a></li>
+                        <li><a href="projects.html">مشاريعنا</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>معلومات الاتصال</h4>
-                    <p>info@salama-example.com</p>
-                    <p>920000000</p>
+                    <h4>الخدمات الرئيسية</h4>
+                    <ul>
+                        <li><a href="building-maintenance.html">صيانة المباني</a></li>
+                        <li><a href="electrical-maintenance.html">الصيانة الكهربائية</a></li>
+                        <li><a href="hvac-maintenance.html">صيانة التكييف</a></li>
+                        <li><a href="mechanical-maintenance.html">الصيانة الميكانيكية</a></li>
+                        <li><a href="technical-reports.html">التقارير الفنية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>معلومات التواصل</h4>
+                    <ul class="contact-info">
+                        <li>📍 الرياض، طريق الملك فهد</li>
+                        <li>📞 920012345</li>
+                        <li>✉️ info@salama.com</li>
+                        <li>🕒 الأحد - الخميس: 8 صباحاً - 5 مساءً</li>
+                    </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 شركة سلامة. جميع الحقوق محفوظة.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 شركة سلامة للصيانة. جميع الحقوق محفوظة.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="terms.html">شروط الاستخدام</a>
+                    <a href="sitemap.html">خريطة الموقع</a>
+                </div>
             </div>
         </div>
     </footer>
