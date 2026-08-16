@@ -3,168 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة اختبار ويب</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!-- SEO Meta Tags -->
+    <title>سلامة | الرائد في عقود الصيانة والتقارير الفنية المعتمدة</title>
+    <meta name="description" content="شركة سلامة تقدم أفضل حلول عقود الصيانة الدورية، التقارير الفنية الهندسية، وصيانة الأنظمة الميكانيكية والكهربائية. دقة، التزام، واحترافية.">
+    <meta name="keywords" content="عقود صيانة, تقارير فنية, شركة صيانة, صيانة دورية, سلامة للصيانة, فحص مباني, صيانة تكييف, صيانة كهرباء">
+    <meta name="author" content="شركة سلامة">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="سلامة | خبراء الصيانة والتقييم الفني">
+    <meta property="og:description" content="حلول متكاملة لعقود الصيانة والتقارير الفنية للمباني والمنشآت.">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.salama-example.com/">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
-            width: 100%;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-        p {
-            color: #666;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        .test-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        input, textarea {
-            padding: 12px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: border-color 0.3s;
-            font-family: inherit;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 14px 20px;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            font-weight: bold;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        .result {
-            margin-top: 20px;
-            padding: 15px;
-            background: #f0f0f0;
-            border-radius: 8px;
-            display: none;
-        }
-
-        .result.show {
-            display: block;
-            animation: fadeIn 0.3s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .success-message {
-            color: #28a745;
-            font-weight: bold;
-        }
-    </style>
+    <!-- Schema.org Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "شركة سلامة للصيانة",
+      "image": "https://www.salama-example.com/logo.png",
+      "description": "شركة متخصصة في عقود الصيانة والتقارير الفنية.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع التخصصي",
+        "addressLocality": "الرياض",
+        "addressCountry": "SA"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🧪 صفحة اختبار ويب</h1>
-        <p>هذه صفحة اختبار تفاعلية بسيطة. املأ النموذج أدناه واضغط على زر الإرسال لاختبار الوظائف.</p>
-        
-        <form class="test-form" id="testForm">
-            <input type="text" id="nameInput" placeholder="أدخل اسمك هنا" required>
-            <textarea id="messageInput" placeholder="اكتب رسالتك هنا..." required></textarea>
-            <button type="submit">إرسال الاختبار</button>
-        </form>
 
-        <div class="result" id="result">
-            <p class="success-message">✅ تم إرسال البيانات بنجاح!</p>
-            <p id="resultData"></p>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>سلامة</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="contracts.html">عقود الصيانة</a></li>
+                    <li><a href="reports.html">التقارير الفنية</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="cta-btn">
+                <a href="#contact">اطلب عرض سعر</a>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <script>
-        document.getElementById('testForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('nameInput').value;
-            const message = document.getElementById('messageInput').value;
-            const resultDiv = document.getElementById('result');
-            const resultData = document.getElementById('resultData');
-            
-            // محاكاة معالجة البيانات
-            resultData.innerHTML = `
-                <strong>الاسم:</strong> ${name}<br>
-                <strong>الرسالة:</strong> ${message}<br>
-                <strong>التوقيت:</strong> ${new Date().toLocaleString('ar-SA')}
-            `;
-            
-            resultDiv.classList.add('show');
-            
-            // إعادة تعيين النموذج بعد ثانيتين
-            setTimeout(() => {
-                document.getElementById('testForm').reset();
-                resultDiv.classList.remove('show');
-            }, 5000);
-        });
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>ضمان استمرارية أعمالك مع عقود صيانة احترافية</h2>
+            <p>نقدم في "سلامة" حلول صيانة شاملة وتقارير فنية دقيقة تضمن لك أعلى معايير الجودة والسلامة.</p>
+            <div class="hero-buttons">
+                <a href="contracts.html" class="btn btn-primary">تصفح عقود الصيانة</a>
+                <a href="reports.html" class="btn btn-secondary">نموذج تقرير فني</a>
+            </div>
+        </div>
+    </section>
 
-        // إضافة تأثير بسيط عند تحميل الصفحة
-        window.addEventListener('load', () => {
-            console.log('✅ صفحة الاختبار جاهزة للاستخدام!');
-        });
-    </script>
+    <!-- Services Overview (SEO Rich Content) -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h3>لماذا تختار سلامة؟</h3>
+                <p>نحن نجمع بين الخبرة التقنية والالتزام الزمني لنقدم قيمة مضافة لمنشأتك.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <h4>عقود الصيانة الوقائية</h4>
+                    <p>برامج صيانة دورية تمنع الأعطال قبل حدوثها، مما يطيل عمر الأصول ويقلل التكاليف التشغيلية.</p>
+                </article>
+                <article class="card">
+                    <h4>التقارير الفنية المعتمدة</h4>
+                    <p>إصدار تقارير فنية هندسية مفصلة لحالة المباني والأنظمة، معتمدة من جهات رقابية.</p>
+                </article>
+                <article class="card">
+                    <h4>صيانة الطوارئ 24/7</h4>
+                    <p>فريق جاهز على مدار الساعة للتعامل مع الأعطال المفاجئة لضمان عدم توقف أعمالك.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <span class="number">+500</span>
+                <span class="label">عقد صيانة نشط</span>
+            </div>
+            <div class="stat-item">
+                <span class="number">+1200</span>
+                <span class="label">تقرير فني معتمد</span>
+            </div>
+            <div class="stat-item">
+                <span class="number">99%</span>
+                <span class="label">رضا العملاء</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h3>تواصل معنا الآن</h3>
+                <p>استشر خبرائنا للحصول على أفضل حل لصيانتك.</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="الاسم الكامل" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <input type="tel" placeholder="رقم الجوال" required>
+                <select>
+                    <option value="">نوع الخدمة المطلوبة</option>
+                    <option value="contract">عقد صيانة</option>
+                    <option value="report">تقرير فني</option>
+                    <option value="emergency">صيانة طارئة</option>
+                </select>
+                <textarea placeholder="تفاصيل الطلب" rows="5"></textarea>
+                <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>شركة سلامة</h4>
+                    <p>شريكك الاستراتيجي في إدارة المرافق والصيانة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="contracts.html">العقود</a></li>
+                        <li><a href="reports.html">التقارير</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>معلومات الاتصال</h4>
+                    <p>info@salama-example.com</p>
+                    <p>920000000</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 شركة سلامة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
