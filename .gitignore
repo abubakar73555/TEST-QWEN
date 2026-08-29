@@ -2,15 +2,18 @@
 # Dependencies
 node_modules/
 
-# Environment variables
+# Environment
 .env
 .env.local
-*.env.*
+.env.*
 
-# Build artifacts
-dist/
-build/
-target/
+# Logs and temp files
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
 
 # Python
 __pycache__/
@@ -18,41 +21,21 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-env/
 venv/
 .venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
+.env
+
+# Build outputs
+dist/
+build/
+*.egg-info/
 .coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-*.tmp
-
-# Logs
-*.log
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Testing
-coverage/
 htmlcov/
-.pytest_cache/
 .mypy_cache/
+.pytest_cache/
+.tox/
 
-# Compressed files
+# Compression
 *.zip
 *.gz
 *.tar
@@ -75,4 +58,8 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+
+# System
+.DS_Store
+Thumbs.db
 ```
