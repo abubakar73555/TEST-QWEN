@@ -7,10 +7,11 @@ node_modules/
 .env.local
 .env.*
 
-# Logs
+# Logs and temp files
 *.log
+*.tmp
 
-# IDE
+# Editors
 .vscode/
 .idea/
 
@@ -20,87 +21,8 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-env/
 venv/
 .venv/
-pip-log.txt
-pip-selfcheck.json
-.eggs/
-*.egg-info/
-.venv.bak/
-.venv.save/
-.coverage
-htmlcov/
-.pytest_cache/
-.mypy_cache/
-.tox/
-noxfile.sessions.log
-.hypothesis/
-.coverage.*
-.ipython/
-.jupyter/
-.direnv/
-
-# Node.js
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-node_modules/
-dist/
-build/
-.nuxt/
-.next/
-.out/
-coverage/
-*.min.js
-*.min.css
-.svelte-kit/
-.cdk.out/
-
-# Build outputs
-target/
-build/
-dist/
-out/
-bundle/
-*.bundle.js
-*.bundle.css
-
-# Compression
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
-
-# OS generated
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Icon?
-.QuickLook/
-.Trashes
-.fseventsd
-.Spotlight-V100
-TemporaryItems/
-.CFUserTextEncoding
-apfs_local_snapshot/
-.SynologyWorkingDirectory/
+.env
+.env.local
 ```
