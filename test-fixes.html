@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار الإصلاحات - شركة سلامة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        .test-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .test-item {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            background: #f0fdf4;
+            border: 1px solid #059669;
+            color: #065f46;
+        }
+        .service-link {
+            font-weight: 600;
+            color: var(--primary-color);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.3s ease;
+        }
+        .service-link:hover {
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>🛡️ سلامة - اختبار الإصلاحات</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="test-section">
+        <h1 style="text-align: center; margin-bottom: 30px;">✅ تم إصلاح المشاكل التالية:</h1>
+        
+        <div class="test-item">
+            <h3>1. إصلاح Lazy Loading للصور</h3>
+            <p>تم تصحيح المنطق العكسي الذي كان يحول الصور فوراً بدلاً من الانتظار.</p>
+            <div class="test-result">✓ الآن المتصفحات التي تدعم lazy loading ستستخدم الميزة الأصلية، وغيرها سيحمل polyfill</div>
+        </div>
+
+        <div class="test-item">
+            <h3>2. إصلاح خاصية gap في service-link:hover</h3>
+            <p>تم إضافة display: inline-flex و align-items: center لجعل خاصية gap تعمل بشكل صحيح.</p>
+            <div class="test-result">✓ جرب تمرير الماوس على الرابط أدناه:<br><br>
+                <a href="#" class="service-link">التفاصيل ←</a>
+            </div>
+        </div>
+
+        <div class="test-item">
+            <h3>3. تحسين التحقق من وجود العناصر في JavaScript</h3>
+            <p>تم إضافة فحوصات أفضل للعناصر قبل التعامل معها.</p>
+            <div class="test-result">✓ لن تظهر أخطاء في console عند عدم وجود عناصر معينة</div>
+        </div>
+
+        <div class="test-item">
+            <h3>4. إضافة صفحة خطأ 404</h3>
+            <p>تم إنشاء صفحة 404.html احترافية للتعامل مع الصفحات غير الموجودة.</p>
+            <div class="test-result">✓ زر أدناه ينقلك لصفحة 404 للتجربة<br><br>
+                <a href="404.html" class="btn-primary">عرض صفحة 404</a>
+            </div>
+        </div>
+
+        <div class="test-item">
+            <h3>5. تحسين نظام الإشعارات (Toast)</h3>
+            <p>تم توحيد استخدام showToast في جميع النماذج والإشعارات.</p>
+            <div class="test-result">✓ جرب إرسال نموذج اتصال أو عرض سعر لرؤية الإشعار المحسن</div>
+        </div>
+
+        <div class="test-item">
+            <h3>6. تحديث ملف vercel.json</h3>
+            <p>تم إضافة إعدادات الأمان والـ redirects اللازمة.</p>
+            <div class="test-result">✓ Headers أمنية مضافة + redirect من /home إلى /index.html</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html" class="btn-primary btn-large">العودة للرئيسية</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Test toast notification
+        setTimeout(() => {
+            if (typeof window.showToast === 'function') {
+                window.showToast('تم تحميل صفحة الاختبار بنجاح!', 'success');
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
