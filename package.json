@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "npx http-server -p 3000",
     "build": "echo 'Build completed - static site'",
-    "start": "npx http-server -p 3000"
+    "start": "npx http-server -p 3000",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.127.1"
   },
   "keywords": [
     "construction",
