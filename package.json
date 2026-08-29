@@ -1,0 +1,20 @@
+{
+  "name": "construction-website",
+  "version": "1.0.0",
+  "description": "موقع شركة مقاولات وإنشاءات",
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "build": "echo 'Build completed - static site'",
+    "start": "npx http-server -p 3000"
+  },
+  "keywords": [
+    "construction",
+    "contracts",
+    "reports",
+    "arabic",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT"
+}
