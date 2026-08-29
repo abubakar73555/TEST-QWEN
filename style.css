@@ -306,6 +306,10 @@ a:hover {
 .service-link {
     font-weight: 600;
     color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap 0.3s ease;
 }
 
 .service-link:hover {

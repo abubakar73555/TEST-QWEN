@@ -1,5 +1,32 @@
 {
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "installCommand": null
+  "rewrites": [
+    { "source": "/404", "destination": "/404.html" },
+    { "source": "/:path*", "destination": "/:path*" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/index.html",
+      "permanent": true
+    }
+  ]
 }
