@@ -1,0 +1,8 @@
+# Cloudflare Pages Redirects Configuration
+# 301 Permanent Redirects for SEO Canonicalization
+
+/home         /index.html   301
+/home.html    /index.html   301
+
+# Fallback 404 handler
+/*            /404.html     404

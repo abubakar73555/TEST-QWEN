@@ -1,14 +1,14 @@
 {
-  "name": "construction-website",
+  "name": "salama-maintenance",
   "version": "1.0.0",
-  "description": "موقع شركة مقاولات وإنشاءات",
+  "description": "شركة سلامة - عقود الصيانة والتقارير الفنية",
   "type": "module",
   "scripts": {
-    "dev": "npx http-server -p 3000",
-    "build": "echo 'Build completed - static site'",
-    "start": "npx http-server -p 3000",
-    "deploy": "wrangler deploy",
-    "preview": "wrangler dev"
+    "dev": "node server.js",
+    "build": "node build.js",
+    "start": "node server.js",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "devDependencies": {
     "wrangler": "^4.127.1"
@@ -21,5 +21,8 @@
     "website"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

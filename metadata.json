@@ -1,0 +1,8 @@
+{
+  "name": "سلامة - عقود الصيانة والتقارير الفنية",
+  "description": "موقع شركة سلامة المتخصصة في عقود الصيانة الوقائية والتصحيحية والتقارير الفنية المعتمدة",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

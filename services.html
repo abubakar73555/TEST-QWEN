@@ -3,14 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدماتنا | شركة سلامة</title>
-    <meta name="description" content="حلول صيانة شاملة">
+    <title>خدمات الصيانة الشاملة | شركة سلامة للخدمات الهندسية والصيانة</title>
+    <meta name="description" content="تصفح جميع خدمات شركة سلامة: صيانة المباني، الأنظمة الكهربائية، التكييف والتبريد، الصيانة الميكانيكية، أنظمة السلامة، وفحص المنشآت بأعلى المعايير.">
+    <meta name="keywords" content="خدمات صيانة, صيانة مباني, صيانة كهربائية, صيانة تكييف, صيانة مصاعد, فحص منشآت, صيانة وقائية, شركة سلامة">
+    <link rel="canonical" href="https://www.salama.com/services.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="خدمات الصيانة الشاملة | شركة سلامة">
+    <meta property="og:description" content="حلول صيانة وقائية وتصحيحية لجميع أنواع المنشآت والمعدات في المملكة والإمارات.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.salama.com/services.html">
+    <meta property="og:image" content="https://www.salama.com/images/logo.png">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "خدمات الصيانة والتشغيل الشاملة",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "شركة سلامة للصيانة",
+            "url": "https://www.salama.com/"
+        },
+        "areaServed": ["SA", "AE"],
+        "description": "حلول متكاملة للصيانة الوقائية والتصحيحية للمباني والمنشآت والمعدات الصناعية والأنظمة الكهروميكانيكية."
+    }
+    </script>
 </head>
 <body>
-    <header><h1>🛡️ سلامة</h1></header>
-    <main><h1>خدماتنا</h1><p>حلول صيانة شاملة</p></main>
-    <footer>&copy; 2024 سلامة</footer>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration:none;color:inherit;"><h1>🛡️ سلامة</h1></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="services.html" class="active">الخدمات</a></li>
+                    <li><a href="contracts.html">عقود الصيانة</a></li>
+                    <li><a href="reports.html">التقارير الفنية</a></li>
+                    <li><a href="projects.html">مشاريعنا</a></li>
+                    <li><a href="blog.html">المركز الإعلامي</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="quote.html" class="btn-primary">اطلب عرض سعر</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>خدمات الصيانة والتشغيل المتكاملة</h1>
+            <p>حلول هندسية وفنية متطورة تغطي كافة احتياجات المنشآت السكنية، التجارية، والصناعية</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-overview section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">دليل خدماتنا الهندسية والفنية</h2>
+                <p class="section-subtitle">اختر الخدمة المطلوبة للاطلاع على المواصفات الفنية ونطاق العمل المعتمد</p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-container" style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-bottom:35px;">
+                <button class="filter-btn active btn-secondary" data-filter="all" style="padding:8px 18px; border-radius:20px; cursor:pointer;">جميع الخدمات (25)</button>
+                <button class="filter-btn btn-secondary" data-filter="building" style="padding:8px 18px; border-radius:20px; cursor:pointer;">المباني والمنشآت</button>
+                <button class="filter-btn btn-secondary" data-filter="electrical" style="padding:8px 18px; border-radius:20px; cursor:pointer;">الكهرباء والطاقة</button>
+                <button class="filter-btn btn-secondary" data-filter="hvac" style="padding:8px 18px; border-radius:20px; cursor:pointer;">التكييف والتبريد</button>
+                <button class="filter-btn btn-secondary" data-filter="mechanical" style="padding:8px 18px; border-radius:20px; cursor:pointer;">الميكانيكا والمعدات</button>
+                <button class="filter-btn btn-secondary" data-filter="safety" style="padding:8px 18px; border-radius:20px; cursor:pointer;">السلامة والإطفاء</button>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🏢</div>
+                    <h3>صيانة المباني المتكاملة</h3>
+                    <p>إدارة وتشغيل صيانة المباني والمجمعات والمرافق السكنية والإدارية والتجارية.</p>
+                    <a href="service-1.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card filter-item" data-category="electrical">
+                    <div class="service-icon">⚡</div>
+                    <h3>صيانة الأنظمة الكهربائية</h3>
+                    <p>فحص واختبار لوحات التوزيع والمحولات والكابلات وأنظمة الطوارئ والتأريض.</p>
+                    <a href="service-2.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card filter-item" data-category="hvac">
+                    <div class="service-icon">❄️</div>
+                    <h3>صيانة التكييف والتبريد</h3>
+                    <p>صيانة دورية للمكيفات المركزية، الشيلرات، وحدات VRF، وشبكات مجاري الهواء.</p>
+                    <a href="service-3.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card filter-item" data-category="mechanical">
+                    <div class="service-icon">🔧</div>
+                    <h3>الصيانة الميكانيكية</h3>
+                    <p>صيانة مضخات المياه، المحركات، أنظمة الضغط، والمولدات الاحتياطية.</p>
+                    <a href="service-4.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🏗️</div>
+                    <h3>فحص وتقييم المنشآت الإنشائية</h3>
+                    <p>معاينة الشروخ، اختبارات الخرسانة، تقييم متانة الأساسات والأعمدة والجسور.</p>
+                    <a href="service-5.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card filter-item" data-category="safety">
+                    <div class="service-icon">🚒</div>
+                    <h3>أنظمة مكافحة الحرائق والسلامة</h3>
+                    <p>صيانة رشاشات المياه، إنذار الحريق، مضخات الإطفاء، ومطابقة متطلبات الدفاع المدني.</p>
+                    <a href="service-6.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card filter-item" data-category="mechanical">
+                    <div class="service-icon">🏭</div>
+                    <h3>صيانة المصانع وخطوط الإنتاج</h3>
+                    <p>برامج صيانة وقائية متقدمة لتقليل فترات التوقف وضمان كفاءة المعدات الثقيلة.</p>
+                    <a href="service-7.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🛗</div>
+                    <h3>صيانة المصاعد والسلالم المتحركة</h3>
+                    <p>فحص شهري شامل لمنظومات الحركة، الحبال، الكوابح، وحساسات الأمان المعتمدة.</p>
+                    <a href="service-8.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🚰</div>
+                    <h3>صيانة شبكات السباكة والصرف</h3>
+                    <p>كشف التسربات إلكترونياً، صيانة شبكات التغذية، ومحطات معالجة الصرف الصحي.</p>
+                    <a href="service-9.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🛡️</div>
+                    <h3>العزل المائي والحراري للأسطح</h3>
+                    <p>معالجة الرطوبة وتطبيق أحدث أنظمة العزل البوليميري والفوم للأسطح والخزانات.</p>
+                    <a href="service-10.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 11 -->
+                <div class="service-card filter-item" data-category="electrical">
+                    <div class="service-icon">☀️</div>
+                    <h3>صيانة أنظمة الطاقة الشمسية</h3>
+                    <p>تنظيف وفحص الألواح الكهروضوئية، المحولات، والبطاريات لضمان أعلى إنتاجية.</p>
+                    <a href="service-11.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 12 -->
+                <div class="service-card filter-item" data-category="safety">
+                    <div class="service-icon">📹</div>
+                    <h3>أنظمة المراقبة والتحكم الأمني</h3>
+                    <p>صيانة كاميرات المراقبة CCTV، بوابات الدخول الذكية، وأنظمة الإنذار ضد السرقة.</p>
+                    <a href="service-12.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 13 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🎨</div>
+                    <h3>الترميم والتشطيبات المعمارية</h3>
+                    <p>معالجة التصدعات، أعمال الدهانات الديكورية والصناعية، وتجديد الواجهات الخارجية.</p>
+                    <a href="service-13.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 14 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🏊</div>
+                    <h3>صيانة المسابح والنوافير المائية</h3>
+                    <p>فحص الفلاتر، مضخات التدوير، موازنة الكيماويات، وتعقيم المسابح العامة والخاصة.</p>
+                    <a href="service-14.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 15 -->
+                <div class="service-card filter-item" data-category="mechanical">
+                    <div class="service-icon">🚜</div>
+                    <h3>صيانة المعدات والآليات الثقيلة</h3>
+                    <p>خدمة صيانة دورية للمعدات الهيدروليكية، الرافعات، ومعدات المناولة واللوجستيات.</p>
+                    <a href="service-15.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 16 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🏢</div>
+                    <h3>تنظيف وصيانة الواجهات الزجاجية</h3>
+                    <p>تنظيف دوري بواجهات الارتفاعات العالية، فحص السيليكون، واستبدال الألواح المتضررة.</p>
+                    <a href="service-16.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 17 -->
+                <div class="service-card filter-item" data-category="hvac">
+                    <div class="service-icon">💨</div>
+                    <h3>صيانة غرف التبريد والتجميد</h3>
+                    <p>صيانة مستودعات التبريد اللوجستية، وحدات الكومبروسور، وضبط درجات الحرارة بدقة.</p>
+                    <a href="service-17.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 18 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🏥</div>
+                    <h3>صيانة المستشفيات والمنشآت الطبية</h3>
+                    <p>إدارة مرافق طبية بمعايير مكافحة العدوى، وصيانة شبكات الغازات الطبية وغرف العمليات.</p>
+                    <a href="service-18.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 19 -->
+                <div class="service-card filter-item" data-category="electrical">
+                    <div class="service-icon">💡</div>
+                    <h3>صيانة شبكات الإنارة الذكية</h3>
+                    <p>أنظمة الإنارة الموفرة للطاقة LED، إنارة الطرق والحدائق، وأنظمة DALI الذكية.</p>
+                    <a href="service-19.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 20 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🌳</div>
+                    <h3>صيانة الحدائق والمسطحات الخضراء</h3>
+                    <p>صيانة شبكات الري الأوتوماتيكية، تشذيب الأشجار، وتنسيق الحدائق للشركات والمجمعات.</p>
+                    <a href="service-20.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 21 -->
+                <div class="service-card filter-item" data-category="electrical">
+                    <div class="service-icon">🔋</div>
+                    <h3>صيانة محطات شحن السيارات الكهربائية</h3>
+                    <p>تركيب وفحص محطات شحن EV السريعة والعادية للمنازل ومواقف الشركات والمجمعات.</p>
+                    <a href="service-21.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 22 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🏠</div>
+                    <h3>صيانة المنازل والفيلات الفاخرة</h3>
+                    <p>باقات صيانة منزلية دورية متكاملة تشمل الكهرباء والسباكة والتكييف والأبواب الأوتوماتيكية.</p>
+                    <a href="service-22.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 23 -->
+                <div class="service-card filter-item" data-category="safety">
+                    <div class="service-icon">🚪</div>
+                    <h3>صيانة الأبواب الأوتوماتيكية والحواجز</h3>
+                    <p>صيانة أبواب المتاجر، البوابات المنزلقة، بوابات المواقف الذكية والحواجز الأمنية.</p>
+                    <a href="service-23.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 24 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">🧹</div>
+                    <h3>خدمات التعقيم ومكافحة الآفات</h3>
+                    <p>برامج دورية آمنة بيئياً لمكافحة الحشرات والقوارض للمستودعات والمطاعم والمنشآت السكنية.</p>
+                    <a href="service-24.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+
+                <!-- Service 25 -->
+                <div class="service-card filter-item" data-category="building">
+                    <div class="service-icon">📶</div>
+                    <h3>صيانة شبكات الاتصالات والألياف البصرية</h3>
+                    <p>صيانة كبائن السيرفرات، كابلات الشبكات Structured Cabling، وتمديدات الفايبر للمباني.</p>
+                    <a href="service-25.html" class="service-link">التفاصيل الفنية ←</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding bg-light">
+        <div class="container">
+            <div class="cta-content">
+                <h2>هل تحتاج إلى خدمة صيانة مخصصة لمنشأتك؟</h2>
+                <p>فريقنا الهندسي جاهز لتقديم دراسة فنية وعرض سعر تفصيلي خلال 24 ساعة فقط.</p>
+                <div class="cta-buttons">
+                    <a href="quote.html" class="btn-primary btn-large">طلب عرض سعر مباشر</a>
+                    <a href="contact.html" class="btn-secondary btn-large">تواصل مع المستشار الفني</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🛡️ سلامة</h3>
+                    <p>الرائدة في عقود الصيانة والتقارير الفنية في المملكة العربية السعودية والإمارات</p>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="contracts.html">عقود الصيانة</a></li>
+                        <li><a href="reports.html">التقارير الفنية</a></li>
+                        <li><a href="projects.html">مشاريعنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>الخدمات الشائعة</h4>
+                    <ul>
+                        <li><a href="service-1.html">صيانة المباني</a></li>
+                        <li><a href="service-2.html">الصيانة الكهربائية</a></li>
+                        <li><a href="service-3.html">صيانة التكييف</a></li>
+                        <li><a href="service-6.html">أنظمة السلامة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>معلومات التواصل</h4>
+                    <ul class="contact-info">
+                        <li>📍 الرياض، طريق الملك فهد</li>
+                        <li>📞 920012345</li>
+                        <li>✉️ info@salama.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 شركة سلامة للصيانة. جميع الحقوق محفوظة.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="terms.html">شروط الاستخدام</a>
+                    <a href="sitemap.html">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

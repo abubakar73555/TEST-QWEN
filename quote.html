@@ -3,14 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>طلب عرض سعر | شركة سلامة</title>
-    <meta name="description" content="عرض خلال 24 ساعة">
+    <title>طلب عرض سعر فوري | شركة سلامة لعقود الصيانة والتقارير الفنية</title>
+    <meta name="description" content="احصل على عرض سعر مخصص لعقد صيانة مبنى، فيلا، مصنع، أو تقرير فني معتمد خلال 24 ساعة بأفضل الأسعار وأعلى جودة.">
+    <meta name="keywords" content="طلب عرض سعر, أسعار عقود الصيانة, تكلفة صيانة المباني, تسعير تقارير فنية, شركة سلامة">
+    <link rel="canonical" href="https://www.salama.com/quote.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="طلب عرض سعر فوري | شركة سلامة">
+    <meta property="og:description" content="نموذج تسعير فوري ومخصص لعقود الصيانة والتقارير الفنية المعتمدة.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.salama.com/quote.html">
+    <meta property="og:image" content="https://www.salama.com/images/logo.png">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header><h1>🛡️ سلامة</h1></header>
-    <main><h1>طلب عرض سعر</h1><p>عرض خلال 24 ساعة</p></main>
-    <footer>&copy; 2024 سلامة</footer>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration:none;color:inherit;"><h1>🛡️ سلامة</h1></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="contracts.html">عقود الصيانة</a></li>
+                    <li><a href="reports.html">التقارير الفنية</a></li>
+                    <li><a href="projects.html">مشاريعنا</a></li>
+                    <li><a href="blog.html">المركز الإعلامي</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="quote.html" class="btn-primary active">اطلب عرض سعر</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>طلب عرض سعر مخصص</h1>
+            <p>املأ البيانات أدناه وسيقوم فريق التسعير الهندسي بإرسال عرض فني ومالي تفصيلي خلال 24 ساعة</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="section-padding">
+        <div class="container" style="max-width:850px;">
+            <div class="quote-form" style="background:white; padding:40px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.05); border:1px solid #e5e7eb;">
+                <h2 style="color:var(--primary-color); text-align:center; margin-bottom:10px;">بيانات طلب التسعير</h2>
+                <p style="color:#6b7280; text-align:center; margin-bottom:30px;">احصل على خصم 15% عند توقيع عقد سنوي جديد هذا الشهر</p>
+
+                <form style="display:flex; flex-direction:column; gap:20px;">
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">اسم العميل / اسم المنشأة *</label>
+                            <input type="text" name="client_name" required placeholder="مثال: شركة الأفق للتجارة" style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                        </div>
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">اسم المسؤول للتواصل *</label>
+                            <input type="text" name="contact_person" required placeholder="مثال: م. خالد المنصور" style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                        </div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">رقم الهاتف / الجوال *</label>
+                            <input type="tel" name="phone" required placeholder="05XXXXXXXX" style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                        </div>
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">البريد الإلكتروني *</label>
+                            <input type="email" name="email" required placeholder="email@domain.com" style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                        </div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">نوع المنشأة *</label>
+                            <select name="facility_type" required style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                                <option value="commercial_tower">برج أو مبنى تجاري</option>
+                                <option value="residential_building">عمارة أو مجمع سكني</option>
+                                <option value="villa">فيلا أو قصر خاص</option>
+                                <option value="factory">مصنع أو مستودع لوجستي</option>
+                                <option value="hospital">مستشفى أو مجمع طبي</option>
+                                <option value="school">مدرسة أو جامعة</option>
+                                <option value="hotel">فندق أو منتجع</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">المدينة والموقع *</label>
+                            <select name="city" required style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                                <option value="riyadh">الرياض</option>
+                                <option value="jeddah">جدة ومكة المكرمة</option>
+                                <option value="dammam">الدمام والخبر والشرقية</option>
+                                <option value="medina">المدينة المنورة</option>
+                                <option value="qassim">القصيم</option>
+                                <option value="dubai">دبي والإمارات</option>
+                                <option value="other">مدينة أخرى</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">نوع الخدمة المطلوبة *</label>
+                            <select name="service_interest" required style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                                <option value="annual_contract">عقد صيانة سنوي شامل</option>
+                                <option value="preventive_contract">عقد صيانة وقائية دورية</option>
+                                <option value="technical_report">إصدار تقرير فني معتمد</option>
+                                <option value="civil_defense">مطابقة واشتراطات الدفاع المدني</option>
+                                <option value="emergency_on_demand">صيانة طارئة عند الطلب</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="display:block; margin-bottom:8px; font-weight:600;">المساحة التقريبية أو عدد الأدوار</label>
+                            <input type="text" name="area_size" placeholder="مثال: 5 أدوار / 2500 متر مربع" style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit;">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label style="display:block; margin-bottom:8px; font-weight:600;">الأنظمة المطلوب شمولها بالعقد</label>
+                        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:10px; background:#f9fafb; padding:15px; border-radius:8px;">
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" name="systems" value="electrical" checked> الأنظمة الكهربائية</label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" name="systems" value="hvac" checked> التكييف والتبريد</label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" name="systems" value="plumbing" checked> السباكة والصرف</label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" name="systems" value="fire_safety" checked> مكافحة الحريق</label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" name="systems" value="elevators"> المصاعد والسلالم</label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;"><input type="checkbox" name="systems" value="bms"> أنظمة BMS والتحكم</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label style="display:block; margin-bottom:8px; font-weight:600;">ملاحظات أو متطلبات خاصة</label>
+                        <textarea name="notes" rows="3" placeholder="أية تفاصيل إضافية عن حالة المنشأة أو تاريخ آخر صيانة..." style="width:100%; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-family:inherit; resize:vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-large" style="width:100%; cursor:pointer; font-size:18px;">إرسال طلب عرض السعر</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🛡️ سلامة</h3>
+                    <p>الرائدة في عقود الصيانة والتقارير الفنية في المملكة العربية السعودية والإمارات</p>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">الخدمات</a></li>
+                        <li><a href="contracts.html">عقود الصيانة</a></li>
+                        <li><a href="reports.html">التقارير الفنية</a></li>
+                        <li><a href="projects.html">مشاريعنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>معلومات التواصل</h4>
+                    <ul class="contact-info">
+                        <li>📍 الرياض، طريق الملك فهد</li>
+                        <li>📞 920012345</li>
+                        <li>✉️ info@salama.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 شركة سلامة للصيانة. جميع الحقوق محفوظة.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="terms.html">شروط الاستخدام</a>
+                    <a href="sitemap.html">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
