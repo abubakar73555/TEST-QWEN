@@ -1,6 +1,12 @@
-```
 # Dependencies
 node_modules/
+dist/
+.wrangler/
+.cloudflare/
+
+# Bun
+bun.lock
+bun.lockb
 
 # Environment
 .env
@@ -14,15 +20,4 @@ node_modules/
 # Editors
 .vscode/
 .idea/
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-.venv/
-.env
-.env.local
-```
+.DS_Store
