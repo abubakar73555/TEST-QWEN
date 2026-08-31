@@ -1,3 +1,231 @@
+/* Page Hero Section */
+.page-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+    color: white;
+    padding: 70px 0 60px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.page-hero h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    color: #e2e8f0;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Service / Contract / Report / Blog Detail Layout */
+.service-detail {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+    .service-detail {
+        grid-template-columns: 1fr;
+    }
+}
+
+.detail-content {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+}
+
+.detail-card {
+    margin-bottom: 35px;
+}
+
+.detail-card h2 {
+    font-size: 1.6rem;
+    color: #1e3a8a;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.detail-card h3 {
+    font-size: 1.3rem;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.scope-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+.scope-list li {
+    position: relative;
+    padding-right: 32px;
+    margin-bottom: 14px;
+    color: #374151;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.scope-list li::before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 22px;
+    height: 22px;
+    background-color: #ecfdf5;
+    color: #059669;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.feature-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.feature-tag, .badge-pill {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid #bfdbfe;
+    display: inline-block;
+}
+
+.detail-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cta-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.cta-box.featured {
+    background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+    border: 2px solid #3b82f6;
+}
+
+.cta-box h3 {
+    font-size: 1.3rem;
+    color: #1e3a8a;
+    margin-bottom: 12px;
+}
+
+.cta-box p {
+    color: #4b5563;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.contact-quick {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-quick .btn-primary,
+.contact-quick .btn-secondary,
+.contact-quick .btn-whatsapp {
+    width: 100%;
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #22bf5b;
+    color: white;
+}
+
+/* Reports & Blog Cards */
+.reports-grid, .blog-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.report-card, .blog-card, .project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.report-card:hover, .blog-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb;
+}
+
+.article-body {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #374151;
+}
+
+.article-body p {
+    margin-bottom: 20px;
+    color: #374151;
+}
+
+.article-body h2 {
+    color: #1e3a8a;
+    font-size: 1.6rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.article-body h3 {
+    color: #1f2937;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
 /* Reset & Base Styles */
 * {
     margin: 0;
