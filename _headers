@@ -1,7 +1,5 @@
-/*
-  Cloudflare Pages Headers Configuration
-  Security, Performance & SEO Headers
-*/
+# Cloudflare Headers Configuration
+# Security, Performance & SEO Headers
 
 /*
   X-Content-Type-Options: nosniff
